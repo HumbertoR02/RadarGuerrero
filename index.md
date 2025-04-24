@@ -12,7 +12,7 @@
     <div class="overlay">
       <img src="images/perfil.jpg" alt="Perfil" class="perfil">
       <h1>Radar Guerrero</h1>
-      <p>Periodismo transgresor</p>
+      <p>Periodismo Cultural</p>
     </div>
   </header>
 
@@ -25,14 +25,13 @@
     <section id="proyectos">
       <h2>Proyectos</h2>
       <ul>
-        <li><strong>Amapola Periodismo</strong>: contenido transgresor y crítico</li>
         <li><strong>Radar cultural</strong>: mapeo de expresiones culturales en la región</li>
       </ul>
     </section>
 
     <section id="contacto">
       <h2>Contacto</h2>
-      <p>Contáctame en: radar@ejemplo.com</p>
+      <p>Contáctame en: radarguerrero2@gmail.com</p>
     </section>
   </main>
 
