@@ -1,7 +1,17 @@
+:root {
+  --color-bg: #f8f8f8;
+  --color-card: #ffffff;
+  --color-primary: #0f4c5c;
+  --color-secondary: #1f7a8c;
+  --color-text: #222;
+  --color-border: #d9d9d9;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
-  background: #f8f8f8;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 .hero {
@@ -18,10 +28,7 @@ body {
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   display: flex;
@@ -41,10 +48,98 @@ body {
 
 main {
   padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 section {
   margin-bottom: 2rem;
+}
+
+.document-manager {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.document-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.document-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+.document-form input,
+.document-form textarea,
+.document-form select,
+.document-form button {
+  font: inherit;
+  padding: 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.document-form button {
+  align-self: end;
+  border: none;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.document-form button:hover {
+  background: var(--color-secondary);
+}
+
+.document-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.document-column {
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  padding: 1rem;
+}
+
+.document-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.document-item {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #fff;
+  padding: 0.75rem;
+}
+
+.document-item h4 {
+  margin: 0 0 0.3rem;
+}
+
+.document-item p {
+  margin: 0.2rem 0;
+}
+
+.empty {
+  color: #666;
+  font-style: italic;
 }
 
 footer {
